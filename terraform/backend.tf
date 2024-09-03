@@ -5,11 +5,12 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
-
-    required_version = "~> 1.1.0"
   }
 
-  # To comment backend block if working on local and terraform state file is locally stored
+  required_version = "~> 1.1.0"
+
+  # To comment out backend block if working on local and 
+  # terraform state file is locally stored
   backend "s3" {
     bucket = "sctp-ce7-tfstate"
     key    = "terraform-ex-ec2-lcchua.tfstate"
