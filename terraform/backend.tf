@@ -5,6 +5,8 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+
+    required_version = "~>1.1.0"
   }
 
   # To comment backend block if working on local and terraform state file is locally stored
