@@ -7,7 +7,7 @@ terraform {
     }
   }
 
-  required_version = "~> 1.1.0"
+  required_version = ">= 1.2.0"
 
   # To comment out backend block if working on local and 
   # terraform state file is locally stored
