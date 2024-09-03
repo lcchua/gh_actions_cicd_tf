@@ -2,6 +2,8 @@
 #     AWS_ACCESS_KEY_ID
 #     AWS_SECRET_ACCESS_KEY
 
+# Getting ready to test the workflow run on Push event = round 1
+
 name: Terraform CICD
 on:
   push: # run on git push
