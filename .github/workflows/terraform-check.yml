@@ -4,7 +4,8 @@ name: Terraform CICD
 on:
   push: # run on git push
   pull_request: # run on open pull request
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   terraform:
@@ -54,10 +55,7 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan -no-color
-        # run: echo ${{ steps.plan.outputs.stdout }}
-        # run: echo ${{ steps.plan.outputs.stderr }}
-        # run: echo ${{ steps.plan.outputs.exitcode }}
         continue-on-error: true
 
-      #- name: Terraform Apply
-      # run: terraform apply -auto-approve
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
