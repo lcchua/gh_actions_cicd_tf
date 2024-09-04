@@ -1,8 +1,4 @@
-# Make sure to add AWS credentials as repository secrets in GitHub:
-#     AWS_ACCESS_KEY_ID
-#     AWS_SECRET_ACCESS_KEY
-
-# Getting ready to test the workflow run on Push event = round 1
+# Getting ready to test the workflow run on Push and Pull Request events
 
 name: Terraform CICD
 on:
