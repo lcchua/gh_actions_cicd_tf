@@ -1,6 +1,6 @@
 # Getting ready to test the workflow run on Push and Pull Request events
 
-name: Terraform CICD
+name: Terraform CI
 on:
   push: # run on git push
   pull_request: # run on open pull request
